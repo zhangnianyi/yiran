@@ -1,0 +1,15 @@
+//版本号
+syntax="proto3";
+//包名
+package go.micro.service.product;
+//定义的服务
+service Cow11023 {
+  rpc AddProduct(ProductInfo) returns (ResponseProduct) {}
+}
+//消息格式
+message ProductInfo {
+  string message = 1;
+}
+message ResponseProduct {
+  string answer = 1;
+}
